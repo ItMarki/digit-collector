@@ -437,7 +437,7 @@
 		}
 
 		function hardReset() {
-			if(confirm("Are you sure you want to hard reset? This will erase all your progress!")) {
+			if(confirm("你確定要重置？這樣會重置你全部的進度！")) {
 				resetPlayer(Infinity);
 				save();
 				location.reload()
@@ -562,13 +562,13 @@
 			<button id="multiplyButton" style="display:none" onclick="multiplyNumbers()">乘以你的數字，可以獲得升級。<br>獲得<span id="crossesToBeGained">1</span>乘號。</button>
 		</div>
 		<div id="digits">
-			<button id="maxAllButton" onclick="maxAllDigits()">Max all</button>
+			<button id="maxAllButton" onclick="maxAllDigits()">全部最大</button>
 			<table>
 				<tr>
-					<th>Number</th>
-					<th>Amount of number</th>
-					<th>Amount of digit</th>
-					<th>Cost of next digit</th>
+					<th>數字</th>
+					<th>數的數量</th>
+					<th>數字的數量</th>
+					<th>下一個數字的成本</th>
 				</tr>
 				<tr id="d0row">
 					<td>0</td>
